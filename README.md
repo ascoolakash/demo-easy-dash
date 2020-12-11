@@ -161,15 +161,19 @@ STEP 7 - Initialize Heroku, add files to Git, and Deploy
 You have to change my-dash-app to a unique name. The name must start with a letter and can only contain lowercase letters, numbers, and dashes.
 
 (venv) C:\demo_easy_dash>git add . 
+
 Note the period at the end. This adds all files to git (except those listed in .gitignore)
 
 (venv) C:\demo_easy_dash>git commit -m "Initial launch"
+
 Every git commit should include a brief descriptive comment. Depending on your operating system, this comment may require double-quotes (not single-quotes).
 
 (venv) C:\demo_easy_dash>git push heroku master 
+
 This deploys your current code to Heroku. The first time you push may take awhile as it has to set up Python and all your dependencies on the remote server.
 
 (venv) C:\demo_easy_dash>heroku ps:scale web=1 
+
 Scaling dynos... done, now running web at 1:Free
 This runs the app with a 1 heroku "dyno"
 
