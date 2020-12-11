@@ -15,12 +15,15 @@ The good news is that Dash uses Flask as its web framework, so anywhere you can 
 
 We can run the application in two ways:
 Steps to install in your own computer:
+
 Step 1 -  Clone project form Git
+
 Use below command on command prompt to clone the project form git or directly download the project from github.
 	git clone https://github.com/ascoolakash/demo-easy-dash
 
  
 STEP 2 - Directed to Development Folder
+
 Extract the downloaded or cloned development folder, then move to the development folder:
 	C:\>cd demo_easy_dash
 STEP 3 (WINDOWS) - Create virtualenv and download all the dependencies:
@@ -34,6 +37,7 @@ see below for macOS/Linux instructions!
 
 
 STEP 3 (macOS/Linux) - Create virtualenv and download all the dependencies:
+
 1. Create a virtual environment. We’re calling ours “venv” but you can use any name you want:
 	$ python3 -m python3 -m virtualenv venv
 2. Activate the virtual environment:
@@ -42,11 +46,14 @@ STEP 3 (macOS/Linux) - Create virtualenv and download all the dependencies:
 	$ pip install -r requirements.txt
 
 STEP 4 - Run the program:
+
 You can run the program by below code:
 python app3.py
 
 Steps of deployment:
+
 STEP 1 - Install Heroku and Git
+
 Heroku is a cloud platform that lets users deploy apps on the web.
 Git is a version control system that will let you keep a local copy of your app for development, and enable you to push changes from your development copy to the deployed version stored at Heroku.
 1. Open a Heroku account. Free accounts are available at https://signup.heroku.com/dc 
@@ -54,7 +61,9 @@ Follow the instructions to obtain a username and password. Write them down!
 2. Log into your Heroku account. It should take you to https://dashboard.heroku.com/apps 
 3. Click on Python. On the next screen select Set Up. An option should appear to download the Heroku Command Line Interface (CLI). Choose your operating system from the dropdown list and follow the instructions to install the utility. You should have the option to install Git as well.
 4. If git was not installed with Heroku CLI, you can download it directly from https://git-scm.com/downloads and follow the instructions for your operating system.
+
 STEP 2 - Install virtualenv
+
 1. Install virtualenv if you don’t already have it by typing pip install virtualenv at your terminal. Virtualenv allows you to create virtual environments for your app that house Python and all the dependencies your app requires. This includes specific version of plotly, dash, and other libraries that you know will work. 
 As new updates become available, they won’t break your app until you’ve had a chance to test them first!
 STEP 3 - Create a Development Folder
@@ -64,6 +73,7 @@ STEP 3 - Create a Development Folder
 
 
 STEP 4 - Initialize Git
+
 1. Initialize an empty git repository:
 	C:\demo_easy_dash>git init
 Initialized empty Git repository in C:/demo_easy_dash/.git/
@@ -81,6 +91,7 @@ C:\my_dash_app>.\venv\Scripts\activate
 
 
 STEP 5 (macOS/Linux) - Create, Activate and Populate a virtualenv
+
 1. Create a virtual environment. We’re calling ours “venv” but you can use any name you want:
 	$ python3 -m python3 -m virtualenv venv
 2. Activate the virtual environment:
@@ -92,6 +103,7 @@ STEP 5 (macOS/Linux) - Create, Activate and Populate a virtualenv
 
 
 STEP 6 - Add Files to the Development Folder
+
 The following files need to be added:
 app3.py	a Dash application
 .gitignore	used by git, identifies files that won’t be pushed to production
@@ -116,7 +128,9 @@ Enter your Heroku credentials:
 Email: my.name@somewhere.com
 Password: ********
 Logged in as my.name@somewhere.com
+
 STEP 7 - Initialize Heroku, add files to Git, and Deploy
+
 (venv) C:\demo_easy_dash>heroku create my-dash-app 
 You have to change my-dash-app to a unique name. The name must start with a letter 
 and can only contain lowercase letters, numbers, and dashes.
@@ -129,10 +143,14 @@ This deploys your current code to Heroku. The first time you push may take awhil
 (venv) C:\demo_easy_dash>heroku ps:scale web=1 
 Scaling dynos... done, now running web at 1:Free
 This runs the app with a 1 heroku "dyno"
+
 STEP 8 - Visit Your App on the Web!
+
 You should be able to view your app at https://my-dash-app.herokuapp.com
 (changing my-dash-app to the name of your app)
+
 STEP 9 - Update Your App
+
 Any time you make changes to your app, add new apps to your repo, or install new libraries and/or upgrade existing dependencies in your virtual environment, you want to push the latest updates to Heroku. These are the basic steps:
 If installing a new package:
 $ pip install newdependency
