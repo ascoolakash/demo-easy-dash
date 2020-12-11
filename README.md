@@ -108,11 +108,14 @@ The following files need to be added:
 
 app3.py	a Dash application
 
-.gitignore	used by git, identifies files that won’t be pushed to production
+.gitignore	
+used by git, identifies files that won’t be pushed to production
 
-Procfile	used for deployment
+Procfile	
+used for deployment
 
-requirements.txt	describes your Python dependencies, can be created automatically
+requirements.txt	
+describes your Python dependencies, can be created automatically
 
 .gitignore
 
