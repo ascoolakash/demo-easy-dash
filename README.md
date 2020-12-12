@@ -201,14 +201,24 @@ Any time you make changes to your app, add new apps to your repo, or install new
 These are the basic steps:
 
 If installing a new package:
+
 $ pip install newdependency
+
 $ pip freeze > requirements.txt
+
 If updating an existing package:
+
 $ pip install dependency --upgrade
+
 $ pip freeze > requirements.txt
+
 In all cases:
+
 $ git status # view the changes (optional)
+
 $ git add .  # add all the changes
+
 $ git commit -m "a description of the changes"
+
 $ git push heroku master
 
