@@ -39,34 +39,47 @@ see below for macOS/Linux instructions!
 STEP 3 (macOS/Linux) - Create virtualenv and download all the dependencies:
 
 1. Create a virtual environment. We’re calling ours “venv” but you can use any name you want:
-	$ python3 -m python3 -m virtualenv venv
+	
+	$ python3 -m virtualenv venv
+	
 2. Activate the virtual environment:
+	
 	$ source venv/bin/activate
+
 3. Install dash and any desired dependencies into your virtual environment
+
 	$ pip install -r requirements.txt
 
 STEP 4 - Run the program:
 
 You can run the program by below code:
-python app3.py
+	python app3.py
 
 Steps of deployment:
 
 STEP 1 - Install Heroku and Git
 
 Heroku is a cloud platform that lets users deploy apps on the web.
+
 Git is a version control system that will let you keep a local copy of your app for development, and enable you to push changes from your development copy to the deployed version stored at Heroku.
+
 1. Open a Heroku account. Free accounts are available at https://signup.heroku.com/dc 
+
 Follow the instructions to obtain a username and password. Write them down! 
+
 2. Log into your Heroku account. It should take you to https://dashboard.heroku.com/apps 
+
 3. Click on Python. On the next screen select Set Up. An option should appear to download the Heroku Command Line Interface (CLI). Choose your operating system from the dropdown list and follow the instructions to install the utility. You should have the option to install Git as well.
+
 4. If git was not installed with Heroku CLI, you can download it directly from https://git-scm.com/downloads and follow the instructions for your operating system.
 
 STEP 2 - Install virtualenv
 
 1. Install virtualenv if you don’t already have it by typing pip install virtualenv at your terminal. Virtualenv allows you to create virtual environments for your app that house Python and all the dependencies your app requires. This includes specific version of plotly, dash, and other libraries that you know will work. 
 As new updates become available, they won’t break your app until you’ve had a chance to test them first!
+
 STEP 3 - Create a Development Folder
+
 1. Create a new folder for your project. This will house the “development” copy of your app:
 	C:\>mkdir demo_easy_dash
 	C:\>cd demo_easy_dash
